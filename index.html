@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html ng-app="plunker">
+
+<head>
+    <meta charset="utf-8" />
+    <title>Home - Sperryball.us</title>
+    <link data-require="bootstrap-css@*" data-semver="3.2.0" rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css" />
+    <script>
+        document.write('<base href="' + document.location + '" />');
+    </script>
+    <link rel="stylesheet" href="style.css" />
+    <script data-require="angular.js@1.2.x" src="https://code.angularjs.org/1.2.20/angular.js" data-semver="1.2.20"></script>
+    <script data-require="angular-route@*" data-semver="1.2.17" src="http://code.angularjs.org/1.2.17/angular-route.js"></script>
+    <script src="app.js"></script>
+</head>
+
+<body ng-controller="appController">
+
+    <div class="container">
+        <center>
+        <ul class="nav nav-pills">
+            <li ng-class="{active: isActive('/')}"><a href="#">Home</a></li>
+            <li ng-class="{active: isActive('/about')}"><a href="#/about">About</a></li>
+        </ul>
+        </center>
+        <div ng-view=""></div>    
+    </div>
+
+    
+</body>
+
+</html>
