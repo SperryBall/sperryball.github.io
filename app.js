@@ -14,6 +14,10 @@ app.config(function($routeProvider) {
         controller: 'musicController',
         templateUrl: 'music.html'
     })
+    .when('/summer-2018', {
+        controller: 'summerController',
+        templateUrl: '../summer-2018/index.html'
+    })
     .otherwise({
         controller: '404Controller',
         templateUrl: '404.html'
