@@ -16,7 +16,7 @@ app.config(function($routeProvider) {
     })
     .when('/summer-2018', {
         controller: 'summerController',
-        templateUrl: 'summer-2018/2018.html'
+        templateUrl: '2018.html'
     })
     .otherwise({
         controller: '404Controller',
