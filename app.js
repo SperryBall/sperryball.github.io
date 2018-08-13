@@ -18,6 +18,14 @@ app.config(function($routeProvider) {
         controller: 'summerController',
         templateUrl: '2018.html'
     })
+    .when('/contact', {
+        controller: 'contactController',
+        templateUrl: 'contact.html'
+    })
+    .when('/ips', {
+        controller: 'contactController',
+        templateUrl: 'ips.html'
+    })
     .otherwise({
         controller: '404Controller',
         templateUrl: '404.html'
